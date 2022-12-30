@@ -2,7 +2,7 @@ import {
   ExtensionScope,
   WindowWithExtensionFunction,
 } from "@zettelproject/terminal-extension-api";
-import { PageExtensionData } from "./types";
+import { PageExtensionData } from "../../shared/types";
 
 void ((window as WindowWithExtensionFunction).extensionFunction = function (
   api
