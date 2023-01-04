@@ -34,4 +34,10 @@ The repository insists of two projects:
 
 Both projects are filled with some dummy implementations to show-case how to setup things, feel free to modify this as you like, or even start your own projects and follow the approaches in this seed project.
 
+### Example
+
+This [video](https://youtu.be/0lCX7MElezY) demonstrates how you can start your own extension based on this seed project and what are the flows that you as a developer will follow to test and publish your extension.
+
+The resulted sample project of that demonstration video is available under [this link](https://github.com/zettelyay/zettel-terminal-extension-example).
+
 For more information, please [contact the development](mailto:ahs502@gmail.com) team.
