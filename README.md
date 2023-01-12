@@ -8,11 +8,17 @@ The repository insists of two projects:
 
    Here are the scripts to support that:
 
-   - To upgrade the Zettel dependencies `@zettelproject/terminal-extension-api` and `@zettelproject/api-client` to their newest versions:
+   - To upgrade the Zettel official dependencies to their newest versions in order to access the latest API end-points:
      ```sh
      client$ npm run upgrade
      ```
-   - To build the extension and pack the zip file to be uploaded to [Zettel's Developer Console](https://app.zettel.ooo/developer):
+   - To upgrade the extension version in `public/manifest.jsonc` file:
+     ```sh
+     client$ npm run version -- patch
+     client$ npm run version -- minor
+     client$ npm run version -- major
+     ```
+   - To build the extension and pack the zip file to be uploaded to [Zettel Developer Console](https://app.zettel.ooo/developer):
      ```sh
      client$ npm run build
      ```
@@ -22,7 +28,7 @@ The repository insists of two projects:
 
    Here are the scripts to support that:
 
-   - To upgrade the Zettel dependency `@zettelproject/api-server` to its newest version:
+   - To upgrade the Zettel official dependencies to their newest versions in order to access the latest API end-points:
      ```sh
      server$ npm run upgrade
      ```

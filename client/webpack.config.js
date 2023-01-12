@@ -1,10 +1,8 @@
 const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const ZipWebpackPlugin = require("zip-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.ts",
+  entry: path.resolve(__dirname, "src", "index.ts"),
   module: {
     rules: [
       {
@@ -19,16 +17,7 @@ module.exports = {
   },
   output: {
     filename: "extension-function.js",
-    path: path.resolve(__dirname, "output", "unpacked"),
+    path: path.resolve(__dirname, "out"),
     clean: true,
   },
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: ["public"],
-    }),
-    new ZipWebpackPlugin({
-      path: "..",
-      filename: "packed.zip",
-    }),
-  ],
 };
